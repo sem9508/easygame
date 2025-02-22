@@ -1,4 +1,4 @@
-EasyGame
+// EasyGame
 
 Current way of installing package:
 - In terminal make sure you are in the directory with the easygame folder and setup.py
