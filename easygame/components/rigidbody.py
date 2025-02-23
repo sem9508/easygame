@@ -7,6 +7,8 @@ class RigidBody2D:
         
         self.ParentObject = ParentObject
         self.gravity = 800
+        self.gravity_enabled = True
 
     def update(self, dt):
-        self.ParentObject.physicsobject2d.add_acceleration([0, self.gravity])
+        if self.gravity_enabled:
+            self.ParentObject.physicsobject2d.add_acceleration([0, self.gravity])

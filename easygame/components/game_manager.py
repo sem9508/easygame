@@ -9,6 +9,8 @@ class GameManager(BaseObject):
 
         self.screen = pygame.display.set_mode((screen_width, screen_height))
         self.camera = Camera2D()
+        self.clock = pygame.time.Clock()
+        self.fps = 120
         self.run = True
         self.previous_frame_time = 0
 
