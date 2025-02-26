@@ -61,7 +61,7 @@ class PhysicsObject2D:
                 else:
                     self.velocity[1] = self.max_velocity[1]
 
-        self.ParentObject.transform.x += self.velocity[0] * dt
-        self.ParentObject.transform.y += self.velocity[1] * dt
+        self.ParentObject.transform.rect.x += self.velocity[0] * dt
+        self.ParentObject.transform.rect.y += self.velocity[1] * dt
 
         self.acceleration = [0, 0]
