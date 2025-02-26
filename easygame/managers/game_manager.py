@@ -1,5 +1,5 @@
-from .baseobject import BaseObject
-from .camera import Camera2D
+from ..components.baseobject import BaseObject
+from ..components.camera import Camera2D
 from ..utils.math_functions import calculate_dt
 import pygame
 
