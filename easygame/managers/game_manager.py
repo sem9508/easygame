@@ -1,14 +1,14 @@
-from ..components.baseobject import BaseObject
+
 from ..components.camera import Camera2D
 from ..utils.math_functions import calculate_dt
 import pygame
 
-class GameManager(BaseObject):
+class GameManager():
     def __init__(self, screen_width, screen_height):
         super().__init__()
 
         self.screen = pygame.display.set_mode((screen_width, screen_height))
-        self.camera = Camera2D()
+        self.camera = Camera2D(self)
         self.clock = pygame.time.Clock()
         self.fps = 120
         self.run = True

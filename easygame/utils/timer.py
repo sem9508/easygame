@@ -4,6 +4,12 @@ class Timer:
         self.target_time = target_time
 
     def update(self, dt):
+        """
+        Possible return values:
+
+        - True: Timer has reached target_time
+        - False: Timer has not reached target_time
+        """
         if self.timer > self.target_time:
             return True
         

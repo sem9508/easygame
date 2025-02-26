@@ -1,8 +1,8 @@
 from .baseobject import BaseObject
 
 class Camera2D(BaseObject):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, game_manager):
+        super().__init__(game_manager)
         self.zoom = 1.0
 
     def apply(self, pos):
