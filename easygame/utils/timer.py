@@ -16,3 +16,6 @@ class Timer:
         else:
             self.timer += dt
             return False
+
+    def reset(self):
+        self.timer = 0
