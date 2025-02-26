@@ -18,8 +18,6 @@ class Animator:
 
         self.switch_animation(start_animation)
 
-        print(self.selected_animation_frame_names)
-
     def switch_animation(self, animation_name):
         self.frame_index = 0
         self.frame_timer.reset()
