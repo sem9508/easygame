@@ -1,5 +1,6 @@
 from . import components
 from . import utils
+from . import managers
 
 def test_message():
     print('test succesful.')
